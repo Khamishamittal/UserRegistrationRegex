@@ -7,24 +7,24 @@
 
             Console.WriteLine("Welcome to User Registration Regex Program");
 
-            ValidFirstName firstname = new ValidFirstName();
 
-            Console.Write("Enter Your First Name : ");
+            ValidLastName lastName = new ValidLastName();
 
-            string FirstName = Console.ReadLine();
+            Console.Write("Enter Your Last Name : ");
 
-            bool val = firstname.ValidateFirstName(FirstName);
+            string LastName = Console.ReadLine();
+
+            bool val = lastName.ValidateFirstName(LastName);
 
             if (val)
             {
-                Console.WriteLine("FirstName is Valid");
+                Console.WriteLine("LastName is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid FirstName");
+                Console.WriteLine("Invalid LastName");
             }
         }
-
-
+        }
     }
-    }
+    
