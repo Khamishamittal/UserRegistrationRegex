@@ -1,4 +1,6 @@
-﻿namespace UserRegistrationRegex
+﻿using System.Text.RegularExpressions;
+
+namespace UserRegistrationRegex
 {
     class Program
     {
@@ -7,24 +9,25 @@
 
             Console.WriteLine("Welcome to User Registration Regex Program");
 
+            ValidPhoneNumber mobileNumber = new ValidPhoneNumber();
 
-            ValidEmail email = new ValidEmail();
+            Console.Write("Enter Your mobileNumber : ");
 
-            Console.Write("Enter Your Email : ");
+            string number = Console.ReadLine();
 
-            string Email = Console.ReadLine();
-
-            bool val = email.ValidateEmail(Email);
+            bool val = mobileNumber.ValidateMobileNumber(number);
 
             if (val)
             {
-                Console.WriteLine("Email is Valid");
+                Console.WriteLine("mobileNumber is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid Email");
+                Console.WriteLine("Invalid mobileNumber");
             }
         }
+
+
     }
     }
     
