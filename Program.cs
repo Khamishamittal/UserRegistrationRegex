@@ -9,21 +9,21 @@ namespace UserRegistrationRegex
 
             Console.WriteLine("Welcome to User Registration Regex Program");
 
-            ValidPhoneNumber mobileNumber = new ValidPhoneNumber();
+            Password validate = new Password();
 
-            Console.Write("Enter Your mobileNumber : ");
+            Console.Write("Enter Your password : ");
 
-            string number = Console.ReadLine();
+            string password = Console.ReadLine();
 
-            bool val = mobileNumber.ValidateMobileNumber(number);
+            bool val = validate.ValidatePassword(password);
 
             if (val)
             {
-                Console.WriteLine("mobileNumber is Valid");
+                Console.WriteLine("password is Valid");
             }
             else
             {
-                Console.WriteLine("Invalid mobileNumber");
+                Console.WriteLine("Invalid password");
             }
         }
 
