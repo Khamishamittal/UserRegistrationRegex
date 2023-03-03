@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using static UserRegistrationRegex.NumericPassword;
 
 namespace UserRegistrationRegex
 {
@@ -7,29 +8,31 @@ namespace UserRegistrationRegex
         public static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to User Registration Regex Program");
+           
+                Console.WriteLine("Welcome to the User Registration Problems using Regular Expression");
 
-            UpperCasePassword validate = new UpperCasePassword();
+                NumericPassword validate = new NumericPassword();
 
-            Console.Write("Enter Your password : ");
+                Console.Write("Enter Your password : ");
 
-            string password = Console.ReadLine();
+                string password = Console.ReadLine();
 
-            bool val = validate.ValidatePassword(password);
+                bool val = validate.ValidatePassword(password);
 
-            if (val)
-            {
-                Console.WriteLine("password is Valid");
-            }
-            else
-            {
-                Console.WriteLine("Invalid password");
+                if (val)
+                {
+                    Console.WriteLine("password is Valid");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid password");
+                }
             }
         }
+
     }
 
 
 
-}
-    
+
     
