@@ -9,7 +9,7 @@ namespace UserRegistrationRegex
 
             Console.WriteLine("Welcome to User Registration Regex Program");
 
-            Password validate = new Password();
+            UpperCasePassword validate = new UpperCasePassword();
 
             Console.Write("Enter Your password : ");
 
@@ -26,8 +26,10 @@ namespace UserRegistrationRegex
                 Console.WriteLine("Invalid password");
             }
         }
+    }
 
 
-    }
-    }
+
+}
+    
     
