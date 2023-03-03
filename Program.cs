@@ -8,29 +8,29 @@ namespace UserRegistrationRegex
         public static void Main(string[] args)
         {
 
-           
-                Console.WriteLine("Welcome to the User Registration Problems using Regular Expression");
 
-                NumericPassword validate = new NumericPassword();
+            Console.WriteLine("Welcome to the User Registration Problems using Regular Expression");
 
-                Console.Write("Enter Your password : ");
+            PasswordSpecialCharacter validate = new PasswordSpecialCharacter();
 
-                string password = Console.ReadLine();
+            Console.Write("Enter Your password : ");
 
-                bool val = validate.ValidatePassword(password);
+            string password = Console.ReadLine();
 
-                if (val)
-                {
-                    Console.WriteLine("password is Valid");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid password");
-                }
+            bool val = validate.ValidatePassword(password);
+
+            if (val)
+            {
+                Console.WriteLine("password is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid password");
             }
         }
-
     }
+}
+
 
 
 
